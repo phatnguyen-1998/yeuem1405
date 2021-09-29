@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/page1.css')}}">
+    <title>Mai Thảo's</title>
+</head>
+<body>
+    <div class="main_background">
+    <h1>Em có muốn gửi lời nhắn gì đến anh không??</h1>
+    <button><a href="{{url_for('mess_yes')}}"> có !! </a></button>
+    <button><a href="{{url_for('mess_No')}}"> khi khác vậy :( </a></button>
+    {% block content %}
+
+    {% endblock %}
+</div>
+    
+</body>
+</html>

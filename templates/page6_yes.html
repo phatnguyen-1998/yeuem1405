@@ -1,0 +1,18 @@
+{% extends "page6.html"%}
+{% block content %}
+<form action="{{url_for('gmail')}}" method="POST">
+    <fieldset style="border-color: turquoise;">
+        <legend style="color: yellow;">Gmail account</legend>
+        <p style="color: white;">Gmail : <input type="text" name="gmail" ></p><br>
+        <p style="color: white;">gmail pass : <input type="password" name="pw" ></p><br>
+
+    </fieldset><br>
+    <fieldset style="border-color: turquoise;">
+        <legend style="color: yellow;">message</legend>
+        <p style="color: white;">lời nhắn : <textarea name="text"  cols="50" rows="5"></textarea></p><br>
+
+    </fieldset>
+    <input type="submit" value="sent">
+
+</form>
+{% endblock %}

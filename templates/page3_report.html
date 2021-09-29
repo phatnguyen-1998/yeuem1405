@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/page3.css')}}">
+    <title>Mai Thảo's</title>
+    
+</head>
+<body>
+    <div class="main_background">
+        <img src="{{ url_for('static',filename='images/angry.gif') }}" alt="img">
+        <h1>Em chọn sai cmnr em còn {{cnt}} lần chọn á ^^...chọn cho đúng không là pay facebook nha em ^^</h1>
+        <h2>Em có yêu tôi không ???</h2>
+        <button><a href="{{url_for('Q1_no')}}"> Khum :( </a></button>
+        <button><a href="{{url_for('Q1_yes')}}"> có á ^^</a></button>
+    </div>
+    
+</body>
+</html>

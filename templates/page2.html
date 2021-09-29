@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/page1.css')}}">
+
+    
+    <title>MaiThao's</title>
+    <style>
+        body {
+    background: radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.15) 30%, rgba(255,255,255,.3) 32%, rgba(255,255,255,0) 33%) 0 0, radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.3) 13%, rgba(255,255,255,0) 14%) 0 0, radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 17%, rgba(255,255,255,.43) 19%, rgba(255,255,255,0) 20%) 0 110px, radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) -130px -170px, radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) 130px 370px, radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.2) 13%, rgba(255,255,255,0) 14%) 0 0, linear-gradient(45deg, #343702 0%, #184500 20%, #187546 30%, #006782 40%, #0b1284 50%, #760ea1 60%, #83096e 70%, #840b2a 80%, #b13e12 90%, #e27412 100%);background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px, 530px 530px, 730px 730px, 100% 100%;background-color: #840b2a;
+
+}
+.main_background {
+    text-align: center;
+}
+button {
+background-color: white;
+border-color: #04A9F3;
+color: #04A9F3;
+padding: 5px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+border-radius: 30px;
+
+}
+.main_background h1 {
+    color: darkturquoise;
+}
+img {
+    height: 300px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="main_background">
+        <img src="{{ url_for('static',filename='images/girlfriend_gif.gif') }}" alt="img">
+        <h1>Hello em nhớ UwU! Em đã sẵn sàng trả lời vài câu hỏi của tôi chưa</h1>
+        <button><a href="{{url_for('ready')}}"> Ready ^^ </a></button>
+    </div>
+    
+
+</body>
+</html>
